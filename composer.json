@@ -4,7 +4,7 @@
     "type" : "phpcodesniffer-standard",
     "homepage" : "https://codingstandards.noomaa.lk",
     "license" : "GPL-3.0-or-later",
-    "minimum-stability" : "dev-main",
+    "minimum-stability" : "dev",
     "keywords" :
     [
         "phpcs",
