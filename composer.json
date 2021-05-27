@@ -5,11 +5,13 @@
     "homepage" : "https://codingstandards.noomaa.lk",
     "license" : "GPL-3.0-or-later",
     "minimum-stability" : "dev",
+    "prefer-stable": true,
     "keywords" :
     [
         "phpcs",
         "standards",
-        "coding standards"
+        "coding standards",
+		"noomaa"
     ],
     "authors" :
     [
@@ -78,12 +80,16 @@
     },
     "autoload" :
     {
+        "psr-4" :
+        {
+            "Noomaa\\CodingStandards\\" : "Noomaa/Sniffs"
+        }
     },
     "autoload-dev" :
     {
         "psr-4" :
         {
-            "Noomaa\\CodingStandards\\" : "./Noomaa/"
+            "Noomaa\\CodingStandards\\" : "Noomaa/Sniffs"
         }
     }
 }
