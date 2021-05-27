@@ -33,3 +33,7 @@ Run the `phpcs` command line tool on a given file or directory, for example:
 
 ### Using PHPCS and Noomaa Coding Standards from within your IDE
 * **Visual Studio**: Please see "[Setting up PHP CodeSniffer in Visual Studio Code](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code/)", a tutorial by Tom McFarlin.
+
+## Libraries
+
+* **Dealerdirect**: [PHP_CodeSniffer Standards Composer Installer Plugin](https://github.com/Dealerdirect/phpcodesniffer-composer-installer)
