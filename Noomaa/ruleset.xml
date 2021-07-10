@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="Noomaa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <description>PHP_CodeSniffer rules (sniffs) to enforce Noomaa's Coding Standards.</description>
-
+ 
     <!-- Generic sniffs -->
     
     <!-- Ensures that array are indented one tab stop. -->
@@ -107,8 +107,8 @@
     <rule ref="Generic.PHP.SAPIUsage"/>
     <!-- Ensures PHP believes the syntax is clean. -->
     <rule ref="Generic.PHP.Syntax"/>
-    <!-- Checks that two strings are not concatenated together; suggests using one string instead. -->
-    <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+<!-- Checks that two strings are not concatenated together; suggests using one string instead.
+<rule ref="Generic.Strings.UnnecessaryStringConcat"/> -->
 <!-- Check & fix whitespace on the inside of arbitrary parentheses. -->
 <!-- <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/> -->
     <!-- Throws errors if tabs are used for indentation. -->
@@ -186,7 +186,7 @@
     
     
     
-    
+
     
     
     
