@@ -1,95 +1,77 @@
 {
-    "name" : "noomaa/codingstandards",
-    "description" : "PHP_CodeSniffer rules (sniffs) to enforce Noomaa's Coding Standards.",
-    "type" : "phpcodesniffer-standard",
-    "homepage" : "https://codingstandards.noomaa.lk",
-    "license" : "GPL-3.0-or-later",
-    "minimum-stability" : "dev",
-    "prefer-stable": true,
-    "keywords" :
-    [
-        "phpcs",
-        "standards",
-        "coding standards",
-		"noomaa"
-    ],
-    "authors" :
-    [
-        {
-            "name" : "Noomaa",
-            "email" : "codingstandards@noomaa.lk",
-            "homepage" : "https://codingstandards.noomaa.lk",
-            "role" : "Company"
-        },
-        {
-            "name" : "I am Programmer",
-            "email" : "support@iamprogrammer.lk",
-            "homepage" : "https://iamprogrammer.lk",
-            "role" : "Lead Developer"
-        }
-    ],
-    "support" :
+  "name": "noomaa/codingstandards",
+  "description": "PHP_CodeSniffer rules (sniffs) to enforce Noomaa's Coding Standards.",
+  "type": "phpcodesniffer-standard",
+  "homepage": "https://codingstandards.noomaa.lk",
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "keywords": [
+    "phpcs",
+    "standards",
+    "coding standards",
+    "noomaa"
+  ],
+  "authors": [
     {
-        "issues" : "https://github.com/Noomaa/CodingStandards/issues",
-        "wiki" : "https://github.com/Noomaa/CodingStandards/wiki",
-        "source" : "https://github.com/Noomaa/CodingStandards"
+      "name": "Noomaa",
+      "email": "codingstandards@noomaa.lk",
+      "homepage": "https://codingstandards.noomaa.lk",
+      "role": "Company"
     },
-	"scripts" :
     {
-		"check-cs" :
-        [
-			"@php ./vendor/squizlabs/php_codesniffer/bin/phpcs"
-		],
-		"fix-cs" :
-        [
-			"@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
-		],
-        "install-coding-standards" :
-        [
-            "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-        ],
-        "pre-install-cmd" :
-        [
-            "@check-cs",
-            "@fix-cs"
-        ],
-        "post-install-cmd" :
-        [
-            "@install-coding-standards"
-        ],
-        "post-update-cmd" : "@install-coding-standards"
-	},
-    "require" :
-    {
-        "php" : ">=7.0.0",
-		"squizlabs/php_codesniffer" : ">=3.5.0",
-		"dealerdirect/phpcodesniffer-composer-installer" : ">=0.7.0"
-    },
-    "require-dev" :
-    {
-        "php": ">=7.0.0",
-		"squizlabs/php_codesniffer" : ">=3.5.0",
-		"dealerdirect/phpcodesniffer-composer-installer" : ">=0.7.0"
-    },
-    "suggest" :
-    {
-	},
-    "extra" :
-    {
-        "phpcodesniffer-search-depth" : 6
-    },
-    "autoload" :
-    {
-        "psr-4" :
-        {
-            "Noomaa\\CodingStandards\\" : "Noomaa/Sniffs"
-        }
-    },
-    "autoload-dev" :
-    {
-        "psr-4" :
-        {
-            "Noomaa\\CodingStandards\\" : "Noomaa/Sniffs"
-        }
+      "name": "I am Programmer",
+      "email": "support@iamprogrammer.lk",
+      "homepage": "https://iamprogrammer.lk",
+      "role": "Lead Developer"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/Noomaa/CodingStandards/issues",
+    "wiki": "https://github.com/Noomaa/CodingStandards/wiki",
+    "source": "https://github.com/Noomaa/CodingStandards"
+  },
+  "scripts": {
+    "check-cs": [
+      "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs"
+    ],
+    "fix-cs": [
+      "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+    ],
+    "install-coding-standards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "pre-install-cmd": [
+      "@check-cs",
+      "@fix-cs"
+    ],
+    "post-install-cmd": [
+      "@install-coding-standards"
+    ],
+    "post-update-cmd": "@install-coding-standards"
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "squizlabs/php_codesniffer": ">=3.5.0",
+    "dealerdirect/phpcodesniffer-composer-installer": ">=0.7.0"
+  },
+  "require-dev": {
+    "php": ">=7.0.0",
+    "squizlabs/php_codesniffer": ">=3.5.0",
+    "dealerdirect/phpcodesniffer-composer-installer": ">=0.7.0"
+  },
+  "suggest": {},
+  "extra": {
+    "phpcodesniffer-search-depth": 6
+  },
+  "autoload": {
+    "psr-4": {
+      "Noomaa\\CodingStandards\\": "Noomaa/Sniffs"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Noomaa\\CodingStandards\\": "Noomaa/Sniffs"
+    }
+  }
 }
